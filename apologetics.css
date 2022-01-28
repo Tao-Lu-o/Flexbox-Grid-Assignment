@@ -1,0 +1,11 @@
+html, body {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    background: url("assets/mountainwallpaper.jpg");
+    background-color: white;
+    background-size: cover;
+}
+
+.titleLogo{
+    display: block;
+    margin: 0 auto;
+}

@@ -15,23 +15,88 @@
                 </nav>
                 <img src="assets/logo.png" alt="Grounded Ministries logo" width=64em />
             </header>
-            <section><img src="assets/logo1.png" alt="Grounded Ministries Logo" class="titleLogo" /> </section>
+            <section><img src="assets/logo.png" alt="Grounded Ministries Logo" class="titleLogo" /> </section>
             <main>
                 <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore 
-                    magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo 
-                    consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur 
-                    sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                    Grounded Ministries is a Christian ministry focused on teaching and practicing Bible-centered apologetics.
+                    What this means is that we primarily rely upon on the Word to provide us with the basis to break down intellectual
+                    and emotional barriers to the Gospel. Other arguments made from a scientific, philosophical, or otherwise secular
+                    basis are extremely useful and we teach them in addition, but we give preferential treatment to arguments made
+                    directly from the Bible.
+                </p>
+                <p>
+                    To us, the practice of apologetics is one of the essential parts of evangelism, but our founders thought there
+                    wasn't enough deference given to the faith which we all share. As Hebrews 4:12 says, "the word of God is living
+                    and active, sharper than any two-edged sword, piercing to the division of soul and of spirit, of joints and of 
+                    marrow, and discerning the thoughts and intentions of the heart" (ESV). What better resource do we have than 
+                    the Word to break down the barriers of sinfulness in man's mind and open their heart to the divine surgeon?
+                    If anything should take the forefront of apologetics, it should be God's Holy, Inspired, Inerrant, and Infallible
+                    Word.
+                </p>
+                <p>
+                    Do you agree with our approach to apologetics? If you do, please sign up for our monthly newsletter! We 
+                    catalog major events in the world and the universal church, where our wonderful columnists here at 
+                    Grounded Ministries analyze and review them. We also provide the latest scoops on what members just like
+                    you are doing all around the world in hopes that it will spur you onto action, encouraging you as you live
+                    your life radically for Christ! 
                 </p>
             </main>
             <aside>
-                <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore 
-                    magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo 
-                    consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur 
-                    sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-                </p>
+                <form onsubmit="handleNewsletterSubmit(event)">
+                    <fieldset>
+                      <legend>Newsletter</legend>
+                      <input name="email" type="text" placeholder="your email..." />
+          
+                      <br />
+          
+                      <label for="newsletter"
+                        >Yes, send me emails about this ministry!
+                        <input type="checkbox" id="newsletter" name="newsletter" />
+                      </label>
+          
+                      <input type="date" name="randomdate" />
+                      <br />
+          
+                      <button type="submit">Sign me up!</button>
+                      <button type="submit">No, don't sign me up!</button>
+                    </fieldset>
+                  </form>
+                  <details style="padding:1%">
+                      <summary>
+                          Privacy
+                      </summary>
+                      <article>
+                        Grounded Ministries' Privacy Policy describes how Apple collects, uses, and shares your personal data.
+
+                        In addition to this Privacy Policy, we provide data and privacy information embedded in our products and certain features that ask to use your personal information. This product-specific information is accompanied by our Data & Privacy Icon.
+                        
+                        You will be given an opportunity to review this product-specific information before using these features. You also can view this information at any time, either in settings related to those features and/or online at apple.com/legal/privacy/data. 
+                        
+                        Please take a moment to familiarize yourself with our privacy practices, accessible via the headings below, and contact us if you have any questions.
+                      </article>
+                  </details>
+                  <details style="padding:1%">
+                      <summary>
+                          Terms and Agreements
+                      </summary>
+                      <article>
+                          You agree to be sent emails to your given email about the info previously mentioned.
+                      </article>
+                  </details>
             </aside>
+            <footer>
+                <h4>Created by</h4>
+                <img src="assets/logo.png" alt="Grounded Ministries logo" width=64em />
+            </footer>
         </div>
+        <script>
+            function handleNewsletterSubmit(event) {
+              console.log(event);
+      
+              event.preventDefault();
+      
+              return false;
+            }
+          </script>
     </body>
 </html>

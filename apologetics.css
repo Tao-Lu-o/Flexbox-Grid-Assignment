@@ -8,20 +8,24 @@ html, body {
 .container{
     display: grid;
     grid-template-columns: 2fr 2fr;
-    grid-template-areas: "header header" "section section" "main aside";
+    grid-template-areas: "header header" "section section" "main aside" "footer footer";
     margin: 0 auto;
 }
 
-main{
+main {
     grid-area: main;
     display: flex;
     padding: 1%;
+    flex-direction: column;
 }
 
-aside{
+aside {
     grid-area: aside;
     display: flex;
+    flex-direction: row;
     padding: 1%;
+    background-color: rgba(0, 0, 0, 0.63);
+    color:white;
 }
 
 header {
@@ -37,43 +41,57 @@ header {
     justify-content: flex-start;
 }
 
+section {
+    grid-area: section;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    padding: 1%;
+}
+
+footer{
+    grid-area: footer;
+    display: flex;
+    flex-direction: row;
+    background-color: white;
+    /* position:absolute; */
+    padding-top: 1%;
+    left: 0;
+    bottom: 0;
+    width:100%;
+    justify-content: flex-start;
+}
+
+p {
+    color:white;
+    background-color: rgba(0, 0, 0, 0.63);
+    padding: 1%;
+}
+
 nav {
     flex-grow: 1;
     flex-shrink: 2;
     padding: 1%;
 }
 
-nav a{
+nav a {
     margin-right: 1%;
     text-decoration: none;
 }
 
-nav a:link{
+nav a:link {
     color: black;
 }
 
-nav a:visited{
+nav a:visited {
     color: black;
 }
 
-nav a:hover{
+nav a:hover {
     color:grey;
 }
 
-p{
-    color:white;
-    background-color: black;
-    opacity: 0.5;
+.titleLogo {
     padding: 1%;
-}
-
-section{
-    grid-area: section;
-    display: flex;
-    margin: 0 auto;
-    padding: 1%;
-}
-
-.titleLogo{
     flex-grow: 1;
 }

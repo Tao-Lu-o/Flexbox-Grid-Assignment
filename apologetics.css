@@ -8,12 +8,18 @@ html, body {
 .container{
     display: grid;
     grid-template-columns: 2fr 2fr;
-    grid-template-areas: "header header" "main main";
+    grid-template-areas: "header header" "section section" "main aside";
     margin: 0 auto;
 }
 
 main{
     grid-area: main;
+    padding: 1%;
+}
+
+aside{
+    grid-area: aside;
+    padding: 1%;
 }
 
 header {
@@ -21,6 +27,11 @@ header {
     display: flex;
     flex-direction: row;
     background-color: white;
+    position:absolute;
+    padding-bottom: 1%;
+    left: 0;
+    top: 0;
+    width:100%;
 }
 
 #navLink{
@@ -39,4 +50,10 @@ nav a{
 
 p{
     color:white;
+}
+
+section{
+    grid-area: section;
+    margin: 0 auto;
+    padding: 1%;
 }
